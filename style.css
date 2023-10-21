@@ -1,0 +1,122 @@
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+
+    padding-left: 0.4rem;
+
+}
+
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("wheather.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 46.8rem;
+}
+
+.container {
+    display: flex;
+    margin-top: 5rem;
+    text-align: center;
+    justify-content: center;
+    color: white;
+
+}
+.topbox p {
+    font-weight: 450;
+}
+
+.topbox h2 {
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    width: 28.1rem;
+    padding: 6rem 2.2rem;
+    
+    background: rgba(0, 0, 0, 0.21);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(1.1px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 8px;
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    
+   
+ 
+
+}
+
+.temp {
+    width: 45%;
+}
+
+input {
+    width: 100%;
+    height: 2rem;
+    border-radius: 5px;
+    margin-top: 8px;
+
+    border: 3px solid #969292;
+}
+
+input:focus {
+    border-color: rgba(0, 0, 0, 0.702);
+
+}
+
+
+
+.temp label {
+    color: white;
+    font-size: 1.1rem;
+}
+
+/* media queries */
+@media (max-width:750px) {
+    .box h2 {
+        font-size: 1.5rem;
+
+    }
+
+    .topbox p {
+        font-size: 0.8rem;
+    }
+
+    .main {
+        flex-direction: column;
+
+
+        align-items: center;
+        width: 80%;
+    }
+
+    .container {
+        margin-top: 2rem;
+        padding: 1rem;
+    }
+
+    .temp {
+        margin: 1.2rem;
+    }
+
+    .main {
+        padding: 2rem 0rem;
+        top: 55%;
+    }
+    .temp label{
+       font-size: 0.9rem;
+    }
+}
